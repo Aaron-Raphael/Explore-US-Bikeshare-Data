@@ -230,14 +230,17 @@ def user_stats(df):
     print('-'*40)
 
 def raw_data_disp(df):
+    # to display raw data if requested by user
     raw_data_req = input('Would you like to view 5 lines of raw data?\n\t Enter yes or no.\n').lower()
     line_number = 0
    
     while True :
+        # displays 5 lines of raw data
         if raw_data_req == 'yes':
             print(df.iloc[line_number : line_number + 5])
             line_number += 5
             
+            # checking if the user needs to view more data
             raw_data_req = input('\nWould you like to view 5 more lines raw data? Enter yes or no.\n')
         else:
             break
