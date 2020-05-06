@@ -1,6 +1,10 @@
 ### Date created
 This project and README file was created on 06-05-2020.
 
+### Content of the Repository
+bikeshare.py
+README.md
+
 ### Project Title
 Explore US Bikeshare Data
 
