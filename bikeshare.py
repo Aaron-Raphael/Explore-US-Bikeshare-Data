@@ -229,6 +229,18 @@ def user_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
+def raw_data_disp(df):
+    raw_data_req = input('Would you like to view 5 lines of raw data?\n\t Enter yes or no.\n').lower()
+    line_number = 0
+   
+    while True :
+        if raw_data_req == 'yes':
+            print(df.iloc[line_number : line_number + 5])
+            line_number += 5
+            
+            raw_data_req = input('\nWould you like to view 5 more lines raw data? Enter yes or no.\n')
+        else:
+            break
 
 def main():
     while True:
@@ -239,6 +251,8 @@ def main():
         station_stats(df)
         trip_duration_stats(df)
         user_stats(df)
+        raw_data_disp(df)
+
 
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
