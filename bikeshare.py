@@ -256,7 +256,7 @@ def main():
         user_stats(df)
         raw_data_disp(df)
 
-
+        # To restart the code of requested by user
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
             break
