@@ -36,6 +36,11 @@ def get_filters():
 
     while True:
       month = input("\nWhich month would you like to view? \n\tJanuary, February, March,\n\t April, May, June or \n\ttype 'all' to view all month's data\n")
+
+      ''' To accept the user input for month and day variable in both title case and lowercase,
+      user may input the choice without considering the input case,
+      the code modifies the input as required to prevent runtime error'''
+
       if month.title() in ('January', 'February', 'March', 'April', 'May', 'June'):
             month = month.title()
       elif month.title() == 'All':
