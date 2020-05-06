@@ -5,6 +5,11 @@ This project and README file was created on 06-05-2020.
 bikeshare.py
 README.md
 
+### Software Requirements
+Python 3, NumPy and pandas installed using Anaconda
+A text editor, like Sublime or Atom.
+A terminal application.
+
 ### Project Title
 Explore US Bikeshare Data
 
